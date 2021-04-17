@@ -6,4 +6,5 @@ const myFunction = (entry, n)=>{
     console.log(word.substring(0,n))
 }
 
+//trying this code
 myFunction("paragraph",4)
