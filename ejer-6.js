@@ -11,8 +11,7 @@ const counter = (text="",word="")=>{
             for(let j of word){
                 let findIt = true;
                 if(text[i+count]!=j) {
-                    findIt=false;
-                    
+                    findIt=false; 
                 }
                 if(findIt){
                     count++;
