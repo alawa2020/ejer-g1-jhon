@@ -5,7 +5,7 @@ const nCapicua = (n = undefined)=>{
      ?console.warn("enter a number")
      :(n===0)
       ?console.warn("the number cannot be 0")
-      :(Math.abs(n)===parseInt(String(Math.abs(n)).split("").reverse().join("")))
+      :(Math.abs(n).toString()===String(Math.abs(n)).split("").reverse().join(""))
         ?console.info("is capicua")
         :console.info("isn't capicua")
 }
@@ -14,5 +14,5 @@ nCapicua();
 nCapicua("")
 nCapicua(-4)
 nCapicua(-455)
-nCapicua(5654)
+nCapicua(99.99)
 nCapicua(565)
