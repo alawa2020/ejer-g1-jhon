@@ -23,4 +23,20 @@ const counter = (text="",word="")=>{
     console.log( countt);
 }
 
-counter("hola asdfhola","l")
+counter("hellohellohelloasdfhello","hello")
+
+//SOL 2
+const counter2 = (text = "", word="")=>{
+    if(!text) return console.warn("enter the text");
+    if(!word) return console.warn("enter the word");
+
+    let count=0;
+    let pos = text.indexOf(word);
+
+    while(pos !== -1){
+        count++;
+        pos = text.indexOf(word,pos+1);
+    }
+    console.info(count)
+}
+counter2("hellohellohelloasdfhello","hello")
